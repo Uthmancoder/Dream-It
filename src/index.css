@@ -11,3 +11,58 @@ body{
   background-color: #fff;
   color: black;
 }
+/* .relative {
+  filter: blur(5px);
+  transform: scale(1.1);
+} */
+
+/* Define common styles for the buttons */
+.button {
+  display: inline-block;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.3s linear ease-in-out; /* Add transition for smooth effect */
+}
+
+/* Style for Get Started button */
+.get-started-button {
+  /* background-color: #0a346f; */
+  color: #ffffff;
+  border: none;
+  box-shadow: -7px -7px 1px 1px #fff; /* Initial shadow on top and left */
+}
+
+
+/* Hover effect for Get Started button */
+.get-started-button:hover {
+  box-shadow: none; /* Remove shadow on hover */
+  transform: translateY(-5px) translateX(-5px); /* Move the button towards the shadow */
+  transition: all linear 0.3s;
+}
+.aboutMore-button {
+  /* background-color: #0a346f; */
+  color: #ffffff;
+  border: none;
+  box-shadow:5px 5px 0px #161618; 
+}
+.aboutMore-button:hover {
+  box-shadow: none; /* Remove shadow on hover */
+  transform: translateY(5px) translateX(5px); /* Move the button towards the shadow */
+  transition: all linear 0.3s;
+}
+
+
+/* Style for Contact Us button */
+.contact-us-button {
+  background-color: #f0f4f8; /* Adjust the color to match your design */
+  border: none;
+  box-shadow: -7px -7px 1px 1px #1E40AF; /* Initial shadow on top and left */
+}
+
+/* Hover effect for Contact Us button */
+.contact-us-button:hover {
+  box-shadow: none; /* Remove shadow on hover */
+  transform: translateY(-5px) translateX(-5px); /* Move the button towards the shadow */
+  transition: all linear 0.3s;
+}

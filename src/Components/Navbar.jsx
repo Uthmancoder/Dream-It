@@ -19,7 +19,7 @@ const Navbar = () => {
         setopenMenu(!openMenu)
     }
     return (
-        <nav className='w-full bg-white shadow-sm z-[999] sticky top-0'>
+        <nav className='w-full bg-white shadow-sm z-[999] sticky top-0' style={{zIndex : 999}}>
             <div className="flex items-center justify-between max-w-[1100px] mx-auto h-16 pr-4 pt-2 md:pr-0 ">
                 {/* Logo */}
                 <div className="logo">
