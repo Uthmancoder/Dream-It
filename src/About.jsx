@@ -5,7 +5,7 @@ import svg from "./assets/images-removebg-preview.png"
 import svg2 from "./assets/images-removebg-preview (2).png"
 import { IoIosCheckmarkCircleOutline } from "react-icons/io"
 
-const SecondCard = () => {
+const About = () => {
     return (
         <div className=" grid  md:grid-cols-2 items-center  gap-5">
             <div>
@@ -14,8 +14,15 @@ const SecondCard = () => {
                     Handyman <span className='text-blue-800'>& Plumber</span></h1>
                 <div className='w-[100px] mt-4'>
                     <Box sx={{ width: '100%' }}>
-                        <LinearProgress />
+                        <LinearProgress
+                            sx={{
+                                "& .MuiLinearProgress-bar": {
+                                    backgroundColor: '#1E40AF',
+                                },
+                            }}
+                        />
                     </Box>
+
                 </div>
 
                 <p className='text-md md:text-lg text-slate-600  border-l-2 pl-4 mt-5 border-blue-800 '>Proin gravida nibh vel velit auctor aliquet. sollicitudi lorem quis bibendum auctor, nisi elit consequat ipsum, sagittis sem nibh elit veniam, quis nostrud exercitation</p>
@@ -46,4 +53,4 @@ const SecondCard = () => {
     )
 }
 
-export default SecondCard
+export default About

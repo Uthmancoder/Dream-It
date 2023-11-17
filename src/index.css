@@ -32,13 +32,29 @@ body{
   border: none;
   box-shadow: -7px -7px 1px 1px #fff; /* Initial shadow on top and left */
 }
+/* wHITE svCard */
+.whitesvcard {
+  border: none;
+  box-shadow: -7px -7px 1px 1px #033bf3; /* Initial shadow on top and left */
+}
 
+/* Dark one */
+.svcard {
+  border: none;
+  box-shadow: -7px -7px 1px 1px #fff; /* Initial shadow on top and left */
+}
 
 /* Hover effect for Get Started button */
 .get-started-button:hover {
   box-shadow: none; /* Remove shadow on hover */
   transform: translateY(-5px) translateX(-5px); /* Move the button towards the shadow */
   transition: all linear 0.3s;
+}
+.whitesvcard:hover {
+  box-shadow: none; /* Remove shadow on hover */
+  transform: translateY(-5px) translateX(-5px); /* Move the button towards the shadow */
+  transition: all linear 0.3s;
+  cursor: pointer;
 }
 .aboutMore-button {
   /* background-color: #0a346f; */
@@ -49,6 +65,11 @@ body{
 .aboutMore-button:hover {
   box-shadow: none; /* Remove shadow on hover */
   transform: translateY(5px) translateX(5px); /* Move the button towards the shadow */
+  transition: all linear 0.3s;
+}
+.svcard:hover {
+  box-shadow: none; /* Remove shadow on hover */
+  transform: translateY(-5px) translateX(-5px); /* Move the button towards the shadow */
   transition: all linear 0.3s;
 }
 

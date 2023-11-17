@@ -33,23 +33,23 @@ const HeroSection = () => {
                         >
                             <img src={bg} alt={`Slide ${index + 1}`} className="w-full h-full ease-in-out" />
                             <div className="absolute inset-0 w-full h-full bg-slate-800 opacity-70" style={{ zIndex: 2 }}></div>
-                            <div className="left-[10%] absolute top-[20%] z-[999] font-serif">
-                                <p className="pl-4 md:pl-0 text-white font-bold text-2xl">Welcome To DreamIt</p>
-                                <h1 className="text-center md:text-start pl-4 md:pl-0 text-white font-bold text-xl my-3 sm:text-3xl font-serif md:text-6xl w-[80%]">
+                            <div className="left-[5%] md:left-[10%] absolute top-[20%] z-[999] font-serif">
+                                <p className="pl-12 md:pl-0 text-white font-bold text-2xl md:text-2xl">Welcome To DreamIt</p>
+                                <h1 className="text-center md:text-start pl-[-10px] md:pl-0  text-white font-bold  my-3 text-3xl font-serif md:text-6xl md:w-[80%]">
                                     Best Home Services Repair Offers
                                 </h1>
-                                <p className="text-xl text-center pl-12 md:pl-0 my-2 md:text-2xl text-white w-[70%]">
+                                <p className="text-md text-center mt-8 md:mt-4 md:pl-0 my-2 md:text-2xl text-white md:w-[70%]">
                                     Have a plumbing issue? Call 24 hours emergency service at all times
                                 </p>
-                                <div className="flex items-center gap-4 my-4 pl-16 md:pl-0">
+                                <div className="flex items-center gap-4 my-6 pl-20 md:pl-0">
                                     <span className="bg-blue-800 text-white p-3 rounded-full">
                                         <FaPhone size={20} />
                                     </span>{' '}
                                     <span className="text-xl md:text-4xl text-white">0123456789</span>
                                 </div>
-                                <div className="flex items-center gap-10 mt-8 ">
-                                    <button className="get-started-button button bg-blue-800 py-3 px-6 md:py-4 md:px-12">Get Started</button>
-                                    <button className="contact-us-button button text-blue-800 py-3 px-6 md:py-4 md:px-12">Contact Us</button>
+                                <div className="grid md:grid-cols-2 items-center gap-8 md:gap-4 mt-8 md:w-[40%]">
+                                    <button className="get-started-button button bg-blue-800 py-4 px-12 w-[70%] mx-auto md:w-fit md:mx-0">Get Started</button>
+                                    <button className="contact-us-button button text-blue-800 py-4 px-12 w-[70%] mx-auto md:w-fit md:mx-0">Contact Us</button>
                                 </div>
                             </div>
                         </div>
