@@ -1,26 +1,32 @@
 import background from '../assets/tap.jpg';
 import { Box, LinearProgress } from '@mui/material';
-import SlideComponent from './Slider';
-
+import CaseStdCard from './CaseStdCard';
 const Projects = () => {
     return (
         <div>
-            <div className="relative w-full h-48 mt-8">
+            <div className="relative w-full  h-screen  mt-8 justify-center">
                 <div className="absolute text-white inset-0 w-full h-screen opacity-90">
                     <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ zIndex: 2 }}>
                         <h2 className='text-white font-bold text-lg'>CASE STUDY WORK</h2>
-                        <h1 className='text-white text-5xl my-6 w-[50%] mx-auto text-center font-bold'>Handyman Best Work & Solution Project </h1>
-                        <div className='w-[100px] my-8 '>
-                        <Box sx={{ width: '100%' }}>
-                            <LinearProgress
-                                sx={{
-                                    "& .MuiLinearProgress-bar": {
-                                        backgroundColor: 'black',
-                                    },
-                                }}
-                            />
-                        </Box>
-                    </div>
+                        <h1 className='text-white text-3xl md:text-5xl md:my-6  md:w-[50%] mx-auto text-center font-bold'>Handyman Best Work & Solution Project </h1>
+                        <div className='w-[100px] my-2 md:my-8 '>
+                            <Box sx={{ width: '100%' }}>
+                                <LinearProgress
+                                    sx={{
+                                        "& .MuiLinearProgress-bar": {
+                                            backgroundColor: 'black',
+                                        },
+                                    }}
+                                />
+                            </Box>
+                        </div>
+                        <div className='w-full h-fit opacity-90 max-w-[1100px] mx-auto' >
+                            <div className='grid md:grid-cols-3 gap-4 md:gap-6 px-4 md:px-0'>
+                                <CaseStdCard Title="Plumbing" Text="Lorem Ipsum simply dummy text of the printing" img={background} />
+                                <CaseStdCard Title="Handyman" Text="Lorem Ipsum simply dummy text of the printing" img={background} />
+                                <CaseStdCard Title="Cleaning" Text="Lorem Ipsum simply dummy text of the printing" img={background} />
+                            </div>
+                        </div>
                     </div>
                     <img className='w-full h-screen object-cover' src={background} alt="" />
                     <div
@@ -32,12 +38,11 @@ const Projects = () => {
                         }}
                     ></div>
                 </div>
-                <div className='absolute top-[80%]  inset-0 w-full h-fit opacity-90'>
-<SlideComponent/>
-                </div>
+
             </div>
+
+            
         </div>
     );
 }
-
 export default Projects;

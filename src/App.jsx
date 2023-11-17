@@ -7,6 +7,8 @@ import About from "./About";
 import Services from "./Components/Services";
 import WhyChooseUs from "./Components/WhyChooseUs";
 import Projects from "./Components/Projects";
+import Reviews from "./Components/Reviews";
+import Contact from "./Components/Contact";
 
 
 function App() {
@@ -24,7 +26,11 @@ function App() {
         <div className="max-w-[1100px] mx-auto px-8 md:px-0">
           <WhyChooseUs />
         </div>
-        <Projects/>
+        <Projects />
+        <div className="max-w-[1100px] mx-auto   md:px-0">
+          <Reviews />
+          <Contact/>
+        </div>
       </div>
     </div>
   )
