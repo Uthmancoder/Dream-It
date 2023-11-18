@@ -9,6 +9,7 @@ import WhyChooseUs from "./Components/WhyChooseUs";
 import Projects from "./Components/Projects";
 import Reviews from "./Components/Reviews";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -18,19 +19,24 @@ function App() {
     <div>
       <Navbar />
       <div className="w-full first-letter:mx-auto">
-        <HeroSection />
-        <div className="max-w-[1100px] mx-auto px-8 md:px-0">
+        <div id="home">
+          <HeroSection />
+        </div>
+        <div id="about" className="max-w-[1100px] mx-auto px-8 md:px-0">
           <About />
         </div>
-        <Services />
+        <div id="services"><Services /></div>
         <div className="max-w-[1100px] mx-auto px-8 md:px-0">
           <WhyChooseUs />
         </div>
         <Projects />
         <div className="max-w-[1100px] mx-auto   md:px-0">
-          <Reviews />
-          <Contact/>
+          <div id="reviews">
+            <Reviews />
+          </div>
+          <div id="contact">   <Contact /></div>
         </div>
+        <Footer />
       </div>
     </div>
   )

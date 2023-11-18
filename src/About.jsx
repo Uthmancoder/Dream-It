@@ -26,20 +26,20 @@ const About = () => {
                 </div>
 
                 <p className='text-md md:text-lg text-slate-600  border-l-2 pl-4 mt-5 border-blue-800 '>Proin gravida nibh vel velit auctor aliquet. sollicitudi lorem quis bibendum auctor, nisi elit consequat ipsum, sagittis sem nibh elit veniam, quis nostrud exercitation</p>
-                <div className='grid md:grid-cols-2 mt-6'>
+                <div className='grid md:grid-cols-2 gap-4 mt-6'>
                     <div className="flex gap-4  items-center">
                         <img className='w-[50px]' src={svg} alt="" />
-                        <h3 className="text-xl">The Best Quality Services</h3>
+                        <h3 className="text-md  md:text-xl">The Best Handyman  Services</h3>
                     </div>
                     <div className="flex gap-4  items-center">
                         <img className='w-[50px]' src={svg2} alt="" />
-                        <h3 className="text-xl">The Best Quality Services</h3>
+                        <h3 className="text-md  md:text-xl">The Best Plumbering Services</h3>
                     </div>
                 </div>
                 <div className='my-4'>
-                    <div className='flex items-center gap-2 my-1'><IoIosCheckmarkCircleOutline className='text-blue-800 font-bold ' size={20} /> <span className='text-slate-500'> Praesent quis odio sit amet nisl luctus venenatis.</span></div>
-                    <div className='flex items-center gap-2 my-1'><IoIosCheckmarkCircleOutline className='text-blue-800 font-bold ' size={20} /> <span className='text-slate-500'>Regular solution give for home problems by handyman.</span></div>
-                    <div className='flex items-center gap-2 my-1'><IoIosCheckmarkCircleOutline className='text-blue-800 font-bold ' size={20} /> <span className='text-slate-500'> Office Desk and Floor Cleaning Services.</span></div>
+                    <div className='flex items-center gap-2 my-1'><IoIosCheckmarkCircleOutline className='text-blue-800 font-bold ' size={20} /> <span className='text-[13px] text-slate-500'> Praesent quis odio sit amet nisl luctus venenatis.</span></div>
+                    <div className='flex items-center gap-2 my-1'><IoIosCheckmarkCircleOutline className='text-blue-800 font-bold ' size={20} /> <span className='text-[13px] text-slate-500'>Regular solution give for home problems by handyman.</span></div>
+                    <div className='flex items-center gap-2 my-1'><IoIosCheckmarkCircleOutline className='text-blue-800 font-bold ' size={20} /> <span className='text-[13px] text-slate-500'> Office Desk and Floor Cleaning Services.</span></div>
                 </div>
 
                 <div className="mt-8">

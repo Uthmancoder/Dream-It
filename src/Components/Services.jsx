@@ -3,6 +3,10 @@ import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 import ServiceCard from './ServiceCard';
 import icon from '../assets/download-removebg-preview (1).png'
+import { MdCleaningServices  } from "react-icons/md";
+import { MdEngineering } from "react-icons/md";
+import { GiAutoRepair,GiTap, GiPipes, GiShower   } from "react-icons/gi";
+
 
 const Services = () => {
   return (
@@ -28,22 +32,22 @@ const Services = () => {
               </div>
               <div className="grid md:grid-cols-3 gap-8 mt-6 max-w-[1100px] mx-auto">
                 <div>
-                  <ServiceCard className=" bg-white  w-full whitesvcard p-4 text-black" icon={icon} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
+                  <ServiceCard className=" bg-white  w-full whitesvcard p-4 text-slate-800" icon={<MdCleaningServices  size={50}/>} Title="Cleaning Services" Text="Lorem Ipsum simply dummy text of the printing" />
                 </div>
                 <div>
-                  <ServiceCard className=" bg-[#1923f0]  w-full svcard p-4 text-white" icon={icon} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
+                  <ServiceCard className=" bg-[#1923f0]  w-full svcard p-4 text-white" icon={<MdEngineering  size={50}/>} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
                 </div>
                 <div>
-                  <ServiceCard className=" bg-white  w-full whitesvcard p-4 text-black" icon={icon} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
+                  <ServiceCard className=" bg-white  w-full whitesvcard p-4  text-slate-800" icon={<GiShower  size={50}/>} Title="Shower Repair" Text="Lorem Ipsum simply dummy text of the printing" />
                 </div>
                 <div>
-                  <ServiceCard className=" bg-[#1923f0]  w-full svcard p-4 text-white" icon={icon} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
+                  <ServiceCard className=" bg-[#1923f0]  w-full svcard p-4 text-white" icon={<GiAutoRepair  size={50}/>} Title="Maintenance Services" Text="Lorem Ipsum simply dummy text of the printing" />
                 </div>
                 <div>
-                  <ServiceCard className=" bg-white  w-full whitesvcard p-4 text-black" icon={icon} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
+                  <ServiceCard className=" bg-white  w-full whitesvcard p-4  text-slate-800" icon={<GiTap  size={50}/>} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
                 </div>
                 <div>
-                  <ServiceCard className=" bg-[#1923f0] w-full svcard p-4 text-white" icon={icon} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
+                  <ServiceCard className=" bg-[#1923f0] w-full svcard p-4 text-white" icon={<GiPipes  size={50}/>} Title="Plumber Services" Text="Lorem Ipsum simply dummy text of the printing" />
                 </div>
               </div>
             </div>

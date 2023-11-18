@@ -1,5 +1,5 @@
 import { Box, LinearProgress } from "@mui/material"
-import icon from '../assets/images-removebg-preview (3).png'
+import { MdOutlineContactPhone } from "react-icons/md";
 const Contact = () => {
     return (
         <div>
@@ -18,8 +18,8 @@ const Contact = () => {
                                 <button className="aboutMore-button button bg-blue-800 py-3 px-6 md:py-4 md:px-12">Book Appointment</button>
                             </div>
                             <div className="flex items-center gap-2 md:gap-3 justify-center mt-8">
-                                <div className="p-2 rounded-full bg-blue-800">
-                                    <img className="w-[50px] h-[50px] " src={icon} alt="" />
+                                <div className="p-4 text-white rounded-full bg-blue-800">
+                                    {<MdOutlineContactPhone size={30}/>}
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-slate-700">24 Hours</h3>
@@ -46,7 +46,7 @@ const Contact = () => {
                     </div>
 
                     {/* form  */}
-                    <form className="w-full my-8 grid gap-6 px-8 md:px-0">
+                    <form id="quote" className="w-full my-8 grid gap-6 px-8 md:px-0">
                         <div className="grid md:grid-cols-2 gap-6">
                             <input className="p-3 w-full rounded-md border-slate-400 focus:ring-2 outline-none  duration-100 ease-in-out ring-blue-800 border" type="text" placeholder="Your Name" name="" id="" />
                             <input className="p-3 w-full rounded-md border-slate-400 focus:ring-2 outline-none  duration-100 ease-in-out ring-blue-800 border" type="text" placeholder="Your Email" name="" id="" />

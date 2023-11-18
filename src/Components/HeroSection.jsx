@@ -3,11 +3,12 @@ import bgImg from '../assets/bgImage.webp';
 import bgImg2 from '../assets/plumbing5.jpeg';
 import bgImg3 from '../assets/plumbing3.jpg';
 import bgImg4 from '../assets/plumbing4.jpg';
-import { FaPhone } from 'react-icons/fa6';
+import { FaPhone, FaTools } from 'react-icons/fa';
 import Card from './Card';
-import Icon1 from '../assets/download-removebg-preview (1).png'
-import Icon2 from '../assets/images-removebg-preview (1).png'
-
+import { MdCleaningServices, MdRoomService } from "react-icons/md";
+import { MdEngineering } from "react-icons/md";
+import { GiAutoRepair, GiTap, GiKitchenTap } from "react-icons/gi";
+import { GrHostMaintenance } from "react-icons/gr";
 const HeroSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -80,12 +81,14 @@ const HeroSection = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex flex-col items-center z-[999] md:left-[7%] my-10" style={{zIndex :1}}>  
+                <div className="flex flex-col items-center z-[999] md:left-[7%] my-10" style={{ zIndex: 1 }}>
                     <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-[90%] mx-auto gap-8'>
-                        <Card svg1={Icon1} Title="Tap Repair" Text="At Our Company we'll help you fi xand repair  broken or leaking tap " svg2={Icon2} />
-                        <Card svg1={Icon1} Title="Tap Repair" Text="At Our Company we'll help you fi xand repair  broken or leaking tap " svg2={Icon2} />
-                        <Card svg1={Icon1} Title="Tap Repair" Text="At Our Company we'll help you fi xand repair  broken or leaking tap " svg2={Icon2} />
-                        <Card svg1={Icon1} Title="Tap Repair" Text="At Our Company we'll help you fi xand repair  broken or leaking tap " svg2={Icon2} />
+                        <Card svg1={<MdEngineering size={60} />} Title="Handyman" Text="At Our Company we'll help you fi xand repair  broken or leaking tap " svg2={<GiAutoRepair size={60} />} />
+                        <Card svg1={<FaTools size={60} />} Title="Pipe Repair" Text="Lorem ipsum dolor thises amet, consectetur is adipiscing elit
+
+p " svg2={<GrHostMaintenance size={60} />} />
+                        <Card svg1={<MdCleaningServices size={60} />} Title="Cleaning Service" Text="At Our Company we'll help you fi xand repair  broken or leaking tap " svg2={<MdRoomService size={60} />} />
+                        <Card svg1={<GiTap size={60} />} Title="Tap Repair" Text="At Our Company we'll help you fi xand repair  broken or leaking tap " svg2={<GiKitchenTap size={60} />} />
                     </div>
                 </div>
 
